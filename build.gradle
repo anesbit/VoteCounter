@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'org.spongepowered.plugin' version '0.9.0'
+    //id "org.spongepowered.gradle.plugin"
+
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+group = 'com.embersyndicate'
+version = '1.0-SNAPSHOT'
+description = 'A VoteCounter for Sponge'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+repositories {
+    maven {
+        url 'https://dl.bintray.com/ichbinjoe/public/'
+    }
+}
+
+dependencies {
+    compileOnly 'org.spongepowered:spongeapi:7.3.0'
+    compileOnly "com.vexsoftware:nuvotifier-universal:2.6.0"
+    annotationProcessor 'org.spongepowered:spongeapi:7.3.0'
+    implementation("org.spongepowered:spongeapi:7.3.0")
+}
+
